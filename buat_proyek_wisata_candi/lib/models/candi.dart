@@ -7,7 +7,7 @@ class Candi {
   final String imageAsset;
   final List<String> imageUrls;
   bool isFavorite;
- 
+
   Candi({
     required this.name,
     required this.location,
@@ -18,4 +18,6 @@ class Candi {
     required this.imageUrls,
     this.isFavorite = false,
   });
+
 }
+

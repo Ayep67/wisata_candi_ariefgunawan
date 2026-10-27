@@ -1,3 +1,5 @@
+import 'package:buat_proyek_wisata_candi/data/candi_data.dart';
+import 'package:buat_proyek_wisata_candi/screens/detail_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
