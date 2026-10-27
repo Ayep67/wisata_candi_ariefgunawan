@@ -30,7 +30,7 @@ class DetailScreen extends StatelessWidget {
               Padding(padding: EdgeInsets.all(24), 
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.deepPurple?.withValues(alpha: 0.8),
+                  color: Colors.deepPurple.withValues(alpha: 0.8),
                   shape: BoxShape.circle,
                 ),
                 child: IconButton(onPressed: (){}, 
@@ -80,7 +80,37 @@ class DetailScreen extends StatelessWidget {
                 ],
                 ),
                 // Info Tengah Row 2 : Dibangun
+                const SizedBox(height: 16),
+                Row(
+                  children: [
+                    Icon(Icons.place, color: const Color.fromARGB(255, 73, 244, 54)),
+                    const SizedBox(width: 8),
+                    const SizedBox(
+                      width: 70,
+                      child: Text(
+                        "Dibangun",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Text(":${candi.built}"),
+                ],
+                ),
                 // Info Tengah Row 3 : Tipe
+                const SizedBox(height: 16),
+                Row(
+                  children: [
+                    Icon(Icons.place, color: const Color.fromARGB(255, 108, 54, 244)),
+                    const SizedBox(width: 8),
+                    const SizedBox(
+                      width: 70,
+                      child: Text(
+                        "Tipe",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Text(":${candi.type}"),
+                ],
+                ),
                 // Info Bawah
               ],
             ),
